@@ -138,7 +138,7 @@ export default MainPage;
 const StyledLogo = styled("span", {
   fontFamily: "'Helvetica Neue', sans-serif",
   fontSize: "32px",
-  color: "#e72e4a",
+  color: "#ff0000",
   fontWeight: 800,
 });
 
@@ -229,7 +229,7 @@ const Adress = styled("div", {
 
 const Directions = styled("a", {
   fontSize: "12px",
-  backgroundColor: "#e72e4a",
+  backgroundColor: "#ff0000",
   display: "block",
   padding: "8px",
   width: "110px",
@@ -239,7 +239,7 @@ const Directions = styled("a", {
   fontWeight: 800,
   "@md": { fontSize: "16px", padding: "10px", width: "150px" },
   "&:hover": {
-    backgroundColor: "#972635",
+    backgroundColor: "#df2c14",
   },
 });
 
@@ -283,13 +283,13 @@ const StyledMain = styled("main", {
 const StyledLogoHeader = styled("a", {
   fontFamily: "'Helvetica Neue', sans-serif",
   fontSize: "24px",
-  color: "#e72e4a",
+  color: "#ff0000",
   fontWeight: 800,
   "@md": {
     fontSize: "32px",
   },
   "&:hover": {
-    color: "#972635",
+    color: "#df2c14",
   },
 });
 
@@ -298,13 +298,13 @@ const StyledHeaderLink = styled("a", {
   flexDirection: "column",
   alignItems: "center",
   "& > span, & > svg": {
-    color: "#e72e4a",
+    color: "#ff0000",
     fontSize: "14px",
   },
 
   "&:hover": {
     "& > span, & > svg": {
-      color: "#972635",
+      color: "#df2c14",
     },
   },
   "@md": {
@@ -365,9 +365,9 @@ const StyledBurgerBtn = styled("div", {
   cursor: "pointer",
   "@md": { margin: "6px 25px 0px 0px" },
   "& >svg": {
-    color: "#e72e4a",
+    color: "#ff0000",
     "&:hover": {
-      color: "#972635",
+      color: "#df2c14",
     },
   },
 });
@@ -400,10 +400,10 @@ const StyledMenuList = styled("ul", {
     fontWeight: 500,
     fontSize: "20px",
     lineHeight: "20px",
-    color: "#e72e4a",
+    color: "#ff0000",
     transition: "300 ease-in-out",
     "&:hover": {
-      color: "#972635",
+      color: "#df2c14",
       backgroundColor: "#FFF8F7",
     },
   },

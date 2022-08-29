@@ -5,6 +5,10 @@ import SushiBoat from "../../public/images/sushi-boat.jpeg";
 import SushiDish from "../../public/images/sushi-dish.jpeg";
 import SushiPlate from "../../public/images/sushi-plate.jpeg";
 import SushiShip from "../../public/images/sushi-ship.jpeg";
+import SushiChef from "../../public/images/chef.jpeg";
+import Avocado from "../../public/images/avocado.jpeg";
+import FlagBoat from "../../public/images/flag-boat.jpeg";
+import VerticalBoat from "../../public/images/vertical-boat.jpeg";
 import Sushi from "../../public/images/sushi.jpeg";
 import Image from "next/image";
 import { Navigation } from "swiper";
@@ -13,25 +17,28 @@ import { useEffect, useState } from "react";
 
 const images = [
   {
-    image: SushiShip,
-    alt: "sushi ship dish",
+    image: Sushi,
+    alt: "sushi",
   },
   {
-    image: SushiBoat,
-    alt: "sushi boat dish",
+    image: Avocado,
+    alt: "avocado dish",
   },
   {
-    image: SushiDish,
-    alt: "sushi dish",
+    image: SushiChef,
+    alt: "Dish from chef",
+  },
+  {
+    image: FlagBoat,
+    alt: "Boat sushi dish",
+  },
+  {
+    image: VerticalBoat,
+    alt: "boat dish",
   },
   {
     image: SushiPlate,
     alt: "sushi plate",
-  },
-
-  {
-    image: Sushi,
-    alt: "sushi",
   },
 ];
 
@@ -48,14 +55,14 @@ export const SwiperCarousel = () => {
       <Swiper
         spaceBetween={5}
         loop={true}
-        slidesPerView={desktop ? 2 : 1}
+        slidesPerView={desktop ? 3 : 2}
         navigation={true}
         modules={[Navigation]}
       >
         {images.map((item, idx) => (
           <SwiperSlide key={idx}>
             <Image
-              width={1200}
+              width={700}
               height={desktop ? 900 : 800}
               objectFit={"cover"}
               src={item.image}
@@ -74,7 +81,7 @@ const style = globalCss({
     zIndex: 0,
   },
   "div.swiper-button-prev::after, div.swiper-button-next::after": {
-    color: "#e72e4a !important",
+    color: "#ff0000 !important",
   },
 
   "div.swiper-button-prev, div.swiper-button-next": {
